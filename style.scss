@@ -1,0 +1,63 @@
+$depot-orange: orange;
+$font-stack: helvetica, sans-serif, comic-sans;
+$secondary-fonts: 'Roboto', sans-serif;
+$full-width: 100vw;
+@import "colors";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@import "reset";
+
+.container{
+  font-family: $font-stack;
+  height: 480px;
+  width: ($full-width/2) + 2vw;
+  @include border-radius(5px);
+
+  h1 {
+    color: $depot-orange;
+    background: $red-700;
+  }
+  &.small{
+    width: 300px;
+  }
+}
+
+.welcome{
+  .btn{
+    background-color: red;
+  }
+}
+
+.contact{
+  .btn{
+    background-color: green;
+  }
+}
+
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}

@@ -1,0 +1,42 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  font-family: helvetica, sans-serif, comic-sans;
+  height: 480px;
+  width: 52vw;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  .container h1 {
+    color: orange;
+    background: #d01716; }
+  .container.small {
+    width: 300px; }
+
+.welcome .btn {
+  background-color: red; }
+
+.contact .btn {
+  background-color: green; }
+
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
+/*# sourceMappingURL=style.css.map */
